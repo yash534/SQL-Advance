@@ -1,3 +1,5 @@
+--CTE(Common Tbale Expression)
+
 WITH CTE_Employee as
 (SELECT FirstName, LastName, Gender, Salary
 ,COUNT(gender) OVER(PARTITION by Gender) as ToralGender
