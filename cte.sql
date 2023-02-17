@@ -1,6 +1,6 @@
 --CTE(Common Tbale Expression)
 
-WITH CTE_Employee as
+WITH CTE_Employees as
 (SELECT FirstName, LastName, Gender, Salary
 ,COUNT(gender) OVER(PARTITION by Gender) as ToralGender
 ,AVG(Salary) OVER (PARTITION BY Gender) as AvgSalary
